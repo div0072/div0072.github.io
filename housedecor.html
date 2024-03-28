@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Decor Catalog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file for styles -->
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Owl Carousel CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <header class="decorative-header">
+        <h1>House Decor Catalog</h1>
+        <div class="decorative-lines"></div>
+    </header>
+
+    <section class="catalog">
+        <div class="owl-carousel owl-theme">
+            <!-- Catalog Item 1 -->
+            <div class="item">
+                <img src="image/g1.jpg" alt="Catalog Item 1" width="750" height="455">
+                <h3>Modern Living Room</h3>
+                <p>Elevate your living room with our modern decor solutions.</p>
+            </div>
+
+            <!-- Catalog Item 2 -->
+            <div class="item">
+                <img src="image/g2.jpg" alt="Catalog Item 2" width="750" height="455">
+                <h3>Elegant Bedroom</h3>
+                <p>Experience tranquility with our elegant bedroom designs.</p>
+            </div>
+
+            <!-- Catalog Item 3 -->
+            <div class="item">
+                <img src="image/g3.jpg" alt="Catalog Item 3" width="750" height="455">
+                <h3>Cozy Kitchen</h3>
+                <p>Transform your kitchen into a cozy and functional space.</p>
+            </div>
+
+            <!-- Catalog Item 4 -->
+            <div class="item">
+                <img src="image/g4.jpg" alt="Catalog Item 4" width="750" height="455">
+                <h3>Contemporary Office</h3>
+                <p>Create a contemporary workspace that inspires productivity.</p>
+            </div>
+
+            <!-- Catalog Item 5 -->
+            <div class="item">
+                <img src="image/g5.jpg" alt="Catalog Item 5" width="750" height="455">
+                <h3>Rustic Dining Room</h3>
+                <p>Enjoy family meals in a charming rustic dining room.</p>
+            </div>
+
+            <!-- Catalog Item 6 -->
+            <div class="item">
+                <img src="image/g6.jpg" alt="Catalog Item 6" width="750" height="455">
+                <h3>Bathroom Retreat</h3>
+                <p>Indulge in a relaxing bathroom retreat with our designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true, // Enable autoplay
+                autoplayTimeout: 2000, // Set autoplay interval in milliseconds (e.g., 5000 ms = 5 seconds)
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

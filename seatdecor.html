@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Decor Catalog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file for styles -->
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Owl Carousel CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <header class="decorative-header">
+        <h1>Seat Decor Catalog</h1>
+        <div class="decorative-lines"></div>
+    </header>
+
+    <section class="catalog">
+        <div class="owl-carousel owl-theme">
+            <!-- Catalog Item 1 -->
+            <div class="item">
+                <img src="image/s1.jpg" alt="Elegant Seating">
+                <h3>Elegant Seating</h3>
+                <p>Add a touch of elegance to your seating area with our exquisite decor.</p>
+            </div>
+
+            <!-- Catalog Item 2 -->
+            <div class="item">
+                <img src="image/s2.jpg" alt="Cozy Lounge">
+                <h3>Cozy Lounge</h3>
+                <p>Create a cozy and inviting lounge with our stylish seating solutions.</p>
+            </div>
+
+            <!-- Catalog Item 3 -->
+            <div class="item">
+                <img src="image/s3.jpg" alt="Modern Recliners">
+                <h3>Modern Recliners</h3>
+                <p>Experience comfort and style with our modern recliner designs.</p>
+            </div>
+
+            <!-- Catalog Item 4 -->
+            <div class="item">
+                <img src="image/s4.jpg" alt="Luxury Dining Chairs">
+                <h3>Luxury Dining Chairs</h3>
+                <p>Elevate your dining experience with our luxurious dining chair collection.</p>
+            </div>
+
+            <!-- Catalog Item 5 -->
+            <div class="item">
+                <img src="image/s5.jpg" alt="Vintage Sofas">
+                <h3>Vintage Sofas</h3>
+                <p>Capture the charm of the past with our vintage sofa decor.</p>
+            </div>
+
+            <!-- Catalog Item 6 -->
+            <div class="item">
+                <img src="image/s6.jpg" alt="Outdoor Seating">
+                <h3>Outdoor Seating</h3>
+                <p>Create a stylish and comfortable outdoor seating space with our designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true, // Enable autoplay
+                autoplayTimeout: 2000, // Set autoplay interval in milliseconds (e.g., 5000 ms = 5 seconds)
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
